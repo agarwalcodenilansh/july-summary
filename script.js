@@ -52,7 +52,6 @@ const clients=[
   {name:'Vaidrishi Laboratories Pvt Ltd',person:'Sangeet Dhasmana',target:0,achieved:2889.87,activeDays:31},
   {name:'Frick India',person:'Deepak Sharma',target:0,achieved:0,activeDays:31},
   {name:'Indu Sports',person:'Sangeet Dhasmana',target:0,achieved:0,activeDays:31},
-  {name:'Stockarea',person:'Deepak Sharma',target:0,achieved:0,activeDays:31},
   {name:'Edusoft Healthcare Ltd',person:'Deepak Sharma',target:3631.08,achieved:0,activeDays:31},
   {name:'GCPA',person:'Shiva',target:0,achieved:0,activeDays:31},
   {name:'Pangea',person:'Deepak Sharma',target:9090.91,achieved:0,activeDays:31},
@@ -82,7 +81,7 @@ clients.forEach(c=>{
 });
 
 // ─── EDD Data ───
-const eddData=[{name:'Bombax',count:44},{name:'Carrier Refrigeration',count:22},{name:'Haier CCR',count:6},{name:'Stockarea',count:4},{name:'Sukuga',count:3},{name:'MVIKAS Tech',count:3},{name:'Carrier - CTD',count:3},{name:'Kumar Services',count:2},{name:'Indu Sports',count:1},{name:'MITRAS',count:1},{name:'Epson India',count:1},{name:'Loom Solar',count:1},{name:'Medical Science',count:1},{name:'Oneric Appliances',count:1}];
+const eddData=[{name:'Bombax',count:44},{name:'Carrier Refrigeration',count:22},{name:'Haier CCR',count:6},{name:'Sukuga',count:3},{name:'Carrier - CTD',count:3},{name:'Kumar Services',count:2},{name:'Indu Sports',count:1},{name:'MITRAS',count:1},{name:'Epson India',count:1},{name:'Loom Solar',count:1},{name:'Medical Science',count:1},{name:'Oneric Appliances',count:1}];
 const eddTotal=eddData.reduce((a,b)=>a+b.count,0);
 
 const eddDetail=[
@@ -102,14 +101,9 @@ const eddDetail=[
   {id:"MVS/26-27/4323",name:"Carrier Refrigeration",transporter:"EKART",edd:"04 Jun 2026",reason:null},
   {id:"MVS/26-27/4353",name:"Carrier Refrigeration",transporter:"XP INDIA",edd:"05 Jun 2026",reason:null},
   {id:"MVS/26-27/4385",name:"Sukuga",transporter:"EKARTD",edd:"08 Jun 2026",reason:null},
-  {id:"MVS/26-27/4843",name:"Stockarea",transporter:null,edd:"06 Jun 2026",reason:null},
   {id:"MVS/26-27/5042",name:"Bombax",transporter:"EKART",edd:"13 Jun 2026",reason:null},
   {id:"MVS/26-27/5362",name:"Carrier Refrigeration",transporter:"EKART",edd:"18 Jun 2026",reason:null},
   {id:"MVS/26-27/5438",name:"Carrier Refrigeration",transporter:"EKART",edd:"19 Jun 2026",reason:null},
-  {id:"MVS/26-27/5489",name:"MVIKAS Tech",transporter:null,edd:"22 Jun 2026",reason:null},
-  {id:"MVS/26-27/5676",name:"Stockarea",transporter:null,edd:"19 Jun 2026",reason:null},
-  {id:"MVS/26-27/5677",name:"Stockarea",transporter:null,edd:"19 Jun 2026",reason:null},
-  {id:"MVS/26-27/5678",name:"Stockarea",transporter:null,edd:"19 Jun 2026",reason:null},
   {id:"MVS/26-27/6257",name:"Indu Sports",transporter:"EKART",edd:"30 Jun 2026",reason:null},
   {id:"MVS/26-27/6258",name:"Carrier Refrigeration",transporter:"EKART",edd:"27 Jun 2026",reason:null},
   {id:"MVS/26-27/6259",name:"Bombax",transporter:"EKART",edd:"01 Jul 2026",reason:null},
@@ -138,7 +132,6 @@ const eddDetail=[
   {id:"MVS/26-27/6780",name:"MITRAS",transporter:"DELHIVERY",edd:"04 Jul 2026",reason:null},
   {id:"MVS/26-27/6865",name:"Bombax",transporter:"DP WORLD",edd:"10 Jul 2026",reason:null},
   {id:"MVS/26-27/7103",name:"Bombax",transporter:"EKART",edd:"11 Jul 2026",reason:null},
-  {id:"MVS/26-27/7198",name:"MVIKAS Tech",transporter:null,edd:"10 Jul 2026",reason:null},
   {id:"MVS/26-27/7283",name:"Carrier Refrigeration",transporter:"XP INDIA",edd:"13 Jul 2026",reason:null},
   {id:"MVS/26-27/7333",name:"Bombax",transporter:"DP WORLD",edd:"13 Jul 2026",reason:null},
   {id:"MVS/26-27/7450",name:"Bombax",transporter:"DP WORLD",edd:"12 Jul 2026",reason:null},
@@ -178,11 +171,10 @@ const eddDetail=[
   {id:"MVS/26-27/9343",name:"Carrier Refrigeration",transporter:"XP INDIA",edd:"29 Jul 2026",reason:null},
   {id:"MVS/26-27/9349",name:"Oneric Appliances",transporter:"GATI",edd:"29 Jul 2026",reason:null},
   {id:"MVS/26-27/9416",name:"Kumar Services",transporter:"DP WORLD",edd:"30 Jul 2026",reason:null},
-  {id:"MVS/26-27/9420",name:"MVIKAS Tech",transporter:"XP INDIA",edd:"23 Jul 2026",reason:null},
 ];
 
 // ─── Open / Due / Booked ───
-const openData=[{name:'Carrier Refrigeration',count:368},{name:'Bombax',count:269},{name:'Carrier - CTD',count:69},{name:'Sukuga',count:26},{name:'Medical Science',count:22},{name:'Oneric Appliances',count:11},{name:'Kumar Services',count:6},{name:'MITRAS',count:5},{name:'Loom Solar',count:5},{name:'Cosmos Pumps Pvt. Ltd.',count:5},{name:'Stockarea',count:4},{name:'MVIKAS Tech',count:3},{name:'Vaidrishi Laboratories',count:3},{name:'Haier CCR',count:2},{name:'Epson India',count:1},{name:'Paramount Surgimed Ltd',count:1},{name:'Aurinko Healthcare',count:1},{name:'Indu Sports',count:1},{name:'Conficore',count:1}];
+const openData=[{name:'Carrier Refrigeration',count:368},{name:'Bombax',count:269},{name:'Carrier - CTD',count:69},{name:'Sukuga',count:26},{name:'Medical Science',count:22},{name:'Oneric Appliances',count:11},{name:'Kumar Services',count:6},{name:'MITRAS',count:5},{name:'Loom Solar',count:5},{name:'Cosmos Pumps Pvt. Ltd.',count:5},{name:'Vaidrishi Laboratories',count:3},{name:'Haier CCR',count:2},{name:'Epson India',count:1},{name:'Paramount Surgimed Ltd',count:1},{name:'Aurinko Healthcare',count:1},{name:'Indu Sports',count:1},{name:'Conficore',count:1}];
 const openTotal=openData.reduce((a,b)=>a+b.count,0);
 
 const dueData=[{name:'Carrier Refrigeration',count:21},{name:'Carrier - CTD',count:5},{name:'Bombax',count:2},{name:'Oneric Appliances',count:1},{name:'Medical Science',count:1},{name:'Cosmos Pumps Pvt. Ltd.',count:1},{name:'Sukuga',count:1},{name:'Haier CCR',count:1}];
